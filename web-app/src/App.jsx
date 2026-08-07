@@ -1,18 +1,19 @@
-
-import Navbar from './components/Navbar.jsx'
-import Home from './components/Home.jsx'
-import './App.css'
+import Navbar from './components/Navbar.jsx';
+import Home from './components/Home.jsx';
+import hero_bg from './assets/hero_bg.png';
+import './App.css';
 
 function App() {
-
   return (
-    <>
-      
-      <Navbar/>
-      <Home/>
-    
-    </>
-    
+    <div
+      className="app"
+      style={{
+        backgroundImage: `url(${hero_bg})`,
+      }}
+    >
+      <Navbar />
+      <Home />
+    </div>
   );
 }
 

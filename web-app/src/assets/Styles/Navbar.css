@@ -1,7 +1,21 @@
 .header{
-    background-color:brown;
+    background-color:rgb(174, 230, 248);
     display:flex;
     justify-content:space-between;
+    padding:30px 30px;
+    position:sticky;
+    top:0;
+
+    background-image: linear-gradient(to right, rgb(191, 213, 219), rgb(97, 158, 202));
+}
+
+.header h2{
+    color:rgb(22, 22, 22);
+    font-weight:bold;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    font-size:1.8rem;
 }
 
 .nav-links{
@@ -16,13 +30,20 @@
 }
 .login-btn{
     
-    background-color:rgb(2, 106, 23);
-    color:white;
+    background-color:rgb(3, 91, 71);
+    color:rgb(255, 255, 255);
     border-radius:70px;
-    width:150px;
+    width:100px;
+    height:50px;
     border:none;
     cursor:pointer;
     align-items:center;
+    
+    &:hover{
+        background-color:rgb(12, 69, 102);
+        transition: background-color 0.3s ease;
+        transform: scale(1.1);
+    }
     
 }
 
@@ -30,4 +51,5 @@
     text-decoration:none;
     color:black;
     font-weight:bold;
+    font-size:1.2rem;
 }
