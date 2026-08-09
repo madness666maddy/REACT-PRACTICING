@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/Styles/Navbar.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar(){
     return(
