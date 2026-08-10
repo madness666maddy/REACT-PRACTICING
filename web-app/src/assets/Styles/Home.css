@@ -56,3 +56,9 @@
     width: 800px;
     height: 800px;
 }
+
+.job-title{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color:rgb(12, 69, 102);
+}

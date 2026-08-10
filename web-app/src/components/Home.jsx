@@ -1,6 +1,7 @@
 import React from "react";
 import '../assets/Styles/Home.css';
 import codeThinking from '../assets/code_thinking.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home(){
     return(
@@ -9,6 +10,8 @@ function Home(){
                 <h2>Welcome To My Portfolio</h2>
 
                 <h1>Hi, I'm <span className="highlight">Madhan V</span></h1>
+                <h1 className="job-title">Web Developer</h1>
+
                 <p>I'm a passionate web developer with expertise in creating dynamic and user-friendly websites. 
                     I specialize in front-end development, utilizing modern technologies to build responsive and 
                     visually appealing web applications.</p>
