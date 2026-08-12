@@ -1,55 +1,99 @@
-.header{
-    background-color:rgb(174, 230, 248);
-    display:flex;
-    justify-content:space-between;
-    padding:30px 30px;
-    position:sticky;
-    top:0;
-
-    background-image: linear-gradient(to right, rgb(191, 213, 219), rgb(97, 158, 202));
+.navbar {
+  width: 100%;
+  background-color: rgba(210, 187, 187, 0.5);
+  border-bottom: 1px solid #171c24;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
-.header h2{
-    color:rgb(22, 22, 22);
-    font-weight:bold;
-    align-items:center;
-    justify-content:center;
-    display:flex;
-    font-size:1.8rem;
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav-links{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+/* Logo */
 
-}
-.nav-links li{
-    list-style:none;
-    padding:0px 20px;
-}
-.login-btn{
-    
-    background-color:rgb(3, 91, 71);
-    color:rgb(255, 255, 255);
-    border-radius:70px;
-    width:100px;
-    height:50px;
-    border:none;
-    cursor:pointer;
-    align-items:center;
-    
-    &:hover{
-        background-color:rgb(12, 69, 102);
-        transition: background-color 0.3s ease;
-        transform: scale(1.1);
-    }
-    
+.navbar-logo {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
 }
 
-.nav-links li a{
-    text-decoration:none;
-    color:black;
-    font-weight:bold;
-    font-size:1.2rem;
+/* Desktop navigation */
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #111827;
+}
+
+.nav-link.active {
+  color: #2563eb;
+}
+
+/* Mobile button */
+
+.menu-button {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  cursor: pointer;
+  color: #111827;
+}
+
+/* Mobile navigation */
+
+.mobile-nav {
+  display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 24px 20px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .mobile-nav-link {
+    text-decoration: none;
+    color: #374151;
+    padding: 12px 0;
+    font-weight: 500;
+  }
+
+  .mobile-nav-link.active {
+    color: #2563eb;
+  }
 }

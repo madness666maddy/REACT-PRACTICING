@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar.jsx';
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
+import Contact from './components/Contact.jsx'
 import hero_bg from './assets/hero_bg.png';
 import './App.css';
 import Education from './components/Education.jsx';
@@ -15,7 +16,7 @@ function App() {
     >
       <Navbar />
       <Home />
-  
+      <Contact/>
       <Education />
       
     </div>
